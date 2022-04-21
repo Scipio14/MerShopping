@@ -1,0 +1,23 @@
+{
+  "name": "shoppingjunkie",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "@Scipio14",
+  "license": "MIT",
+  "scripts": {
+    "start": "node backed/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seederScript.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.11"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
