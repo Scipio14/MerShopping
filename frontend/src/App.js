@@ -1,16 +1,16 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 
 //Screens
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
+//Components
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
-      Hello World!
       <Navbar />
       {/*SideDrawer or Mobile navbar*/}
       {/*Backdrop*/}
@@ -22,9 +22,6 @@ function App() {
           <Route />
         </Routes>
       </main>
-      {/*HomeScreen*/}
-      {/*ProductScreen*/}
-      {/*CartScreen*/}
     </Router>
   );
 }
